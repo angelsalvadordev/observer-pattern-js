@@ -9,10 +9,35 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Observer Pattern</title>
   </head>
   <body>
-    <h1>List</h1>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">Marketplace</a>
+        <button type="button" class="btn btn-light">Shopping Cart: <span class="badge badge-light">0</span></button>
+      </nav>
+    </header>
+    <main>
+      <div class="col-4 mx-auto mt-5">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-add">Add Article</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mx-auto mt-5">
+        <ul class="list-group mt-5">
+          The list is empty
+        </ul>
+      </div>
+      <div class="alerts">
+        <!-- <div class="alert-success alert alert-success text-center" role="alert">Article has been added successfully</div>
+        <div class="alert-delete alert alert-info text-center" role="alert">Article has been deleted</div> -->
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
